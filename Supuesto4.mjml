@@ -18,8 +18,8 @@
       }
     </mj-style>
   </mj-head>
-  <mj-body font-family="Comic Sans MS, Arial, sans-serif">
-    <mj-wrapper css-class="gradient-background">
+  <mj-body font-family="Comic Sans MS, Arial, sans-serif" css-class="gradient-background">
+    <mj-wrapper>
       <mj-section>
         <mj-column>
           <mj-text align="center" font-size="30px" font-weight="bold" color="#333333">¡SORTEO ESPECIAL!</mj-text>
