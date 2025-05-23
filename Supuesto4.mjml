@@ -11,7 +11,7 @@
       /* Define la clase CSS para el degradado */
       .gradient-background {
         /* Degradado lineal de arriba a abajo: amarillo a naranja */
-        background-image: linear-gradient(to bottom, #FFA420, #FF6F30);
+        background-image: linear-gradient(to bottom, #FFA420, #FFA420);
         /* Fallback para clientes que no soportan degradados (ej. Outlook) */
         background-color: #FFD700;
         /* Se mostrará el color inicial del degradado */
