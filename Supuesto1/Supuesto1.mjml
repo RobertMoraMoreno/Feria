@@ -12,8 +12,23 @@
         /* Se mostrará el color inicial del degradado */
       }
     </mj-style>
+
+    <mj-attributes>
+      <mj-text font-family="Comic Neue, Arial, sans-serif" />
+      <mj-all font-family="Comic Neue, Arial, sans-serif" /> </mj-attributes>
+
   </mj-head>
-  <mj-body css-class="gradient-background" font-family="Comic Neue, Arial, sans-serif">
+  <mj-body css-class="gradient-background">
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="24px" color="black" font-weight="bold" font-family="Comic Sans MS" align="center" color="#333333">
+          ¡Hola, {{name}}!
+        </mj-text>
+        <mj-text font-family="Comic Sans MS" font-size="15px" align="center">
+          Prepárate para la aventura más épica del año en el Salón del Cómic.
+        </mj-text>
+      </mj-column>
+    </mj-section>
     <mj-section>
       <mj-column>
         <mj-image src="https://practicas.feriavalencia.com/wp-content/uploads/2025/05/Cabecera_Mail_600x240px_Cartel_Comic_2025.jpg" alt="Banner del Evento" width="700px" align="center"></mj-image>
@@ -39,7 +54,11 @@
       </mj-column>
     </mj-section>
 
-    <mj-divider border-color="#000000" border-width="3px" width="85%" />
+    <mj-section>
+      <mj-column>
+        <mj-divider border-color="#000000" border-width="3px" width="85%" />
+      </mj-column>
+    </mj-section>
 
     <mj-section>
       <mj-column>
@@ -57,17 +76,24 @@
       </mj-column>
     </mj-section>
 
-    <mj-divider border-color="#000000" border-width="3px" width="85%" />
+    <mj-section>
+      <mj-column>
+        <mj-divider border-color="#000000" border-width="3px" width="85%" />
+      </mj-column>
+    </mj-section>
 
     <mj-section>
       <mj-column>
         <mj-text font-size="24px" font-weight="bold" font-family="Comic Sans MS" align="center">Información Adicional del Evento</mj-text>
         <mj-image src="https://www.normaeditorial.com/upload/media/agenda/0001/36/2ddfdc7aa0f96d7e20cf31f311282aaa185e51d7.jpeg" alt="Banner del Evento" width="600px" align="center"></mj-image>
-        </mj-text>
       </mj-column>
     </mj-section>
 
-    <mj-divider border-color="#000000" border-width="3px" width="85%" />
+    <mj-section>
+      <mj-column>
+        <mj-divider border-color="#000000" border-width="3px" width="85%" />
+      </mj-column>
+    </mj-section>
 
     <mj-section>
       <mj-column>
@@ -90,8 +116,8 @@
       </mj-column>
     </mj-section>
     <mj-section>
-        <mj-column width="100px">
-          <mj-image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD////29vaIiIhLS0uMjIz6+vrk5OTc3Nzt7e06Ojo0NDTn5+e9vb2UlJR/f3/Ozs5jY2Obm5tDQ0OlpaXIyMjY2NhoaGgUFBRhYWGwsLBcXFxEREQsLCx0dHSpqam2trYkJCRxcXEdHR0PDw9TU1PgDvobAAAFGElEQVR4nO2d6XbiOBBGbQI2xmCzJuyQdPL+rzjQc3qSoaEWW+kqub/7Pz51gyVLJamUJAAAAAAAAAAAAAAAAAAAAAAAYEef4GAdXBBSgrl1cEGAYfxQhlvr4IJAGU6sgwsCZfhsHVwQKMOxdXBBoAyztXV0IaAM0711dCEgDWvr6EJAGp6towsBaZhbRxcC0jB9tQ4vALRhFxoibTi1Di8AtGHagS8iYziwjq89jGEHBm6MYTqzDrA1nOHQOsDWcIbpi3WEbWENC+sI28IaRp+t4Q3ThXWM7RAYRv7FEBhGnpGSGKYn6yjbIDKMureRGaZL6zibIzSMuC1KDdN8ZB1qQ8SGaVpZx9oMhWE63lhH2wSN4WWmEeE4XGd4GYjPY2uPWsML+TKqt7WB4ZXxZHncLKLIUzU0/I8sfbJWYGhrmMLQHBjCEIb2wBCGMLQHhjCEoT0w7LZh1nnDYidxjNmwl7zmXTdMknkshq+jXf1UzbfnyU1OlzNMFs/eDX9sqsmw+AzoZh8Xa5gkb2O/hod6UtwGpDdMkiPVHO0M+8u7cTUxTJLNypvhYf7o1WpmeGnJ1dCR4W76OOymhhfK6l6vY2D4Rn7EWhhemS2fb4YBf9xww3ykWxpe2den6Th78MDv5kC8n8EMf7I+7I6D5Xmy+rOLphXnF87QhPJBb9cZw6PAL2rDpUgwYkO2i4ndUNIEozYUzFTjNpQLRmrITVKjN3w8s+mIoWAgE7fhTiUYoeF7r+uGqkYYo6FsMBqzofIdjc9wqxWMzbBUC8ZmOFHqZVlkhiOxWjFd1v3yTokE54bCn3BYPT5C6NvwVaKXncjCcr4NJXkL7tSZb8Pf1pV+Y8UWJ3FtOGMFBaVJXBty/UyvL3iIa0NmwNYTHd/xbLhhfkLZIXPPhsyQVLhg4tmQzq+dhU/xbEgKioNzbPhCGooXZh0bkpuV5AVJHBuS+Rl5hQDHhuRGpR/ixzg2pDZGKkqr+jUk8xeKMhZ+DfdUaDv5c/wakhMLxXP8GlKZYE3xKr+GNRGZpp6jX8MnIjJNpRW/htRvqCl65NeQaoeamkd+DamBt8Lw3a/hRxjDhV9D6ouvaIfkHMzvqE3Rl5JzML8jb0XNUXInjrEhkfDOxA9ZU4LWhtR/Xzzypk81GRueidDE16fQSWVjQ2onlPQ1ZRavjMvPkluhZMXj+rSgeUV2KrZMlKjhVuesi+yR8a0ED2C3FUvWrr4TenGNL8fJClon9ckZYsq+Ynt+Adm8oCe3W+hM/bFkT6p9jUT68Gqa5g+v+tlwf3pFPjL6Nk5skJO7y8BH2ckFB7euUVPEX0zrm9qGs7N0N6OHy574zuJKvh3M+qNy1H8ZbMXnTpxcuiY86dSMN2u7K4dvFHRyJYL0NFcDnNyDpDyIoMDJT6g4sablaG32C3q7QnMc3S6jOdOlwHpW8QVuEtsMB8OZT6h0TVPcdDP/IitXpeLD2un/hO9s3F3XEfo9tc4/3UFxCFiAx5uB1iGbYkaeXbAi5CfDw6zwDuHGp8660U9CKboVlGU0WGS7+60YyVIaFEPv11W0nQ6frQV4dJUHbshc5GU4Rs0nxCv5rmJbavXR7p8U9gl8OXP9AKcX27XGla5XLWLzu/IiryQxjen9/Mq6Xgne1ueBy2G2mI/5lOh38m0UnweWclZtp3nx5ffMinx1enI8/mzG+6EsF/v+oiwP3kdmAAAAAAAAAAAAAAAAAAAAAIC/hX8A7bVBOcx9hDIAAAAASUVORK5CYII=" alt="TikTok" width="50px"></mj-image>
+<mj-column width="100px">
+          <mj-image src="https://i.pinimg.com/originals/51/4e/07/514e079aaf2dfd198fa00b3139175dfc.jpg" alt="TikTok" width="50px"></mj-image>
         </mj-column>
         <mj-column width="100px">
           <mj-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9mmTA0mB_Xoh12EtCGoVFVFCSr0YkP8VnVQ&s" alt="Instagram" width="50px" height="50px"></mj-image>
@@ -102,7 +128,7 @@
         <mj-column width="100px">
           <mj-image src="https://i.pinimg.com/736x/6d/1e/39/6d1e39f5ba8d8615e4b1a27acc9379a4.jpg" alt="Teléfono" width="50px"></mj-image>
         </mj-column>
-      </mj-section>
+    </mj-section>
     <mj-section>
       <mj-column>
         <mj-text align="center" font-size="15px">¡No te lo pierdas!</mj-text>

@@ -5,7 +5,7 @@
 
 #### 2. Generar HTML
 - **Instalar MJML:** Ejecuta `npm install -g mjml`.
-- **Convertir a HTML:** En la terminal, usa:
+- **Convertir a HTML:** `En la terminal, usa:  mjml Supuesto1.mjml -o output.html`.
 
 
 #### 3. Enviar el Boletín
@@ -15,4 +15,6 @@
 
 #### 4. Adaptar el Boletín
 - **Duplicar `Supuesto2.mjml`** y modificar para nuevas promociones.
+- **Modificar el contenido:** Cambia los textos, imágenes y estilos según sea necesario para la nueva promoción.
+
 - **Generar un nuevo HTML** como se indicó antes.
